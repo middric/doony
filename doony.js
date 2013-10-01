@@ -208,4 +208,11 @@ jQuery(function($) {
             title.after(button);
         }
     }
+
+    $('#side-panel>div').first().remove();
+    var anchors = $('#left-top-nav a');
+    $('#left-top-nav').html('').append(anchors);
+    anchors.filter(':not(:last-child)').after('<div class="arrow"></div>');
+
+    $('#login-field b').text($('#login-field b').text().replace(/.*CN=([^,]+).*/, "$1"))
 });

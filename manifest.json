@@ -9,7 +9,8 @@
     {
       "__comment__": "You need to add your own URL's here.",
       "matches": [
-        "https://jenkins.ci.cloudbees.com/*"
+        "https://ci-pal.test.bbc.co.uk/*",
+        "https://ci-pal.int.bbc.co.uk/*"
       ],
       "css": ["doony.css"],
       "js": ["jquery-2.0.3.js", "doony.js"]
